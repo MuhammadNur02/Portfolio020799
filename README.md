@@ -3,7 +3,7 @@ Ini adalah website portofolio yang saya buat untuk menampilkan pengalaman, keahl
 
 ## 🔗 Live Demo
 Kunjungi website saya di:  
-👉 [https://muhammadnur02.github.io/Portofolio020799](https://muhammadnur02.github.io/Portofolio020799)
+👉 [https://muhammadnur02.github.io/Portofolio020799](https://muhammadnur02.github.io/Portofoliojulian)
 
 ## 🛠️ Teknologi yang digunakan
 - HTML5
