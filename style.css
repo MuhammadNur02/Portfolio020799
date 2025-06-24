@@ -111,36 +111,6 @@ span {
   border-right: 2px solid #00ffff;
   padding-right: 5px;
 }
-.typing {
-  width: fit-content;
-  border-right: 2px solid #00ffff;
-  white-space: nowrap;
-  overflow: hidden;
-  color: #00ffff;
-  font-family: monospace;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 18ch;
-  }
-}
-
-@keyframes blink-caret {
-  0%, 100% {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #00ffff;
-  }
-}
-.home-content p {
-  font-size: 1.6rem;
-}
-
 .social-media a {
   display: inline-flex;
   justify-content: center;
