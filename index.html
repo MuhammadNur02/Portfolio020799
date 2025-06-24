@@ -77,7 +77,7 @@
       </div>
       <div class="about-content">
         <h2 class="heading">About <span>Me</span></h2>
-        <h3 class="typing">Frontend Developer</h3>
+        <h3><span class="typing-about">Frontend Developer</span></h3>
         <p>
           I am 24 Years old, ShiftLead with 2 years experience at PT. Shopee
           Express...
@@ -175,5 +175,14 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script>
+  var typedAbout = new Typed(".typing-about", {
+    strings: ["Frontend Developer", "Web Developer"],
+    typeSpeed: 60,
+    backSpeed: 40,
+    backDelay: 2000,
+    loop: true
+  });
+</script>
   </body>
 </html>
