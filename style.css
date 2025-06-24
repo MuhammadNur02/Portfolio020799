@@ -104,7 +104,13 @@ span {
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
   animation: floatimage 4s ease-in-out infinite;
 }
-
+.typing-about {
+  color: #00ffff;
+  font-family: monospace;
+  font-weight: bold;
+  border-right: 2px solid #00ffff;
+  padding-right: 5px;
+}
 .typing {
   width: fit-content;
   border-right: 2px solid #00ffff;
