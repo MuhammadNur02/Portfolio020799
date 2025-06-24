@@ -21,6 +21,7 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -80,8 +81,27 @@ section {
 .home-content h3 {
   font-size: 3.2rem;
   font-weight: 700;
+  animation: fadeInUp 1s ease forwards;
 }
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .home-content h1 {
+    font-size: 40px;
+  }
 
+  .home-content h3 {
+    font-size: 20px;
+  }
+}
 .home-content h3:nth-of-type(2) {
   margin-bottom: 2rem;
 }
