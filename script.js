@@ -1,5 +1,4 @@
-/==================== toggle icon navbar ====================/;
-
+// ==================== Toggle Icon Navbar ====================
 let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
 
@@ -8,8 +7,7 @@ menuIcon.onclick = () => {
   navbar.classList.toggle("active");
 };
 
-/==================== scroll section active link ====================/;
-
+// ==================== Scroll Section Active Link ====================
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
 
@@ -22,31 +20,28 @@ window.onscroll = () => {
     let id = sec.getAttribute("id");
 
     if (top >= offset && top < offset + height) {
-      navLinks.forEach((link) => {
-        link.classList.remove("active");
-      });
+      navLinks.forEach((link) => link.classList.remove("active"));
       document
         .querySelector('header nav a[href*="' + id + '"]')
         .classList.add("active");
     }
   });
 
-  /==================== sticky navbar ====================/;
+  // ==================== Sticky Navbar ====================
   let header = document.querySelector("header");
   header.classList.toggle("sticky", window.scrollY > 100);
 
-  /==================== remove toggle icon and navbar when link clicked ====================/;
+  // ==================== Close Navbar When Link Clicked ====================
   menuIcon.classList.remove("fa-xmark");
   navbar.classList.remove("active");
 };
 
-/==================== scroll reveal ====================/;
-
+// ==================== Scroll Reveal Animation ====================
 ScrollReveal({
   distance: "80px",
   duration: 2000,
   delay: 200,
-  reset: true, // opsional: jika ingin animasi saat kembali scroll
+  reset: true
 });
 
 ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
@@ -57,11 +52,21 @@ ScrollReveal().reveal(
 ScrollReveal().reveal(".about-img", { origin: "left" });
 ScrollReveal().reveal(".about-content", { origin: "right" });
 
-/==================== typed js ====================/;
+// ==================== Typed.js Animation ====================
 const typed = new Typed(".multiple-text", {
   strings: ["Frontend Developer", "Web Designer", "UI/UX Designer"],
   typeSpeed: 70,
   backSpeed: 70,
   backDelay: 1000,
-  loop: true,
+  loop: true
+});
+
+// ==================== Flying Dragon Movement ====================
+const dragon = document.querySelector(".flying-dragon");
+
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+  if (dragon) {
+    dragon.style.transform = `translateX(${scrollY * 0.4}px) translateY(${Math.sin(scrollY / 100) * 15}px)`;
+  }
 });
