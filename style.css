@@ -162,16 +162,14 @@ span {
 }
 
 .typing-text {
-  font-size: 2rem;
-  font-weight: 700;
+  font-weight: inherit;
+  font-size: inherit;
   color: var(--main-color);
-  display: inline-block;
   border-right: 2px solid var(--main-color);
   white-space: nowrap;
   overflow: hidden;
   animation: blink-caret 0.75s step-end infinite;
 }
-
 @keyframes blink-caret {
   from, to { border-color: transparent; }
   50% { border-color: var(--main-color); }
