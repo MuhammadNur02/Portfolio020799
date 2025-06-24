@@ -256,7 +256,7 @@ span {
 }
 
 .btn:hover {
-  box-shadow: none;
+ transform: scale(1.05);
 }
 
 .about {
@@ -454,7 +454,7 @@ span {
 }
 
 .footer-text {
-  font-size: 1, 6rem;
+  font-size: 1. 6rem;
 }
 
 .footer-iconTop {
@@ -489,7 +489,7 @@ span {
     padding: 2rem 3%;
   }
 
-  .section {
+  section {
     padding: 10rem 3%;
   }
 
