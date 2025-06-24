@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <!-- FONT AWESOME -->
     <link
@@ -37,6 +38,7 @@
         <h3>Hello World, My Name is</h3>
         <h1>Juliansyah</h1>
         <h3>And I'm a<span class="multiple-text"></span></h3>
+        <h3 class="typing">Frontend Developer</h3>
         <p>
           Creative, self-starting and ambitious Front-End Developer with 1 year
           of experience, in website development, for Responsive e-Commerce and
@@ -175,6 +177,15 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+       <script>
+  var typed = new Typed("#typed-text", {
+    strings: ["Frontend Developer", "Web Designer", "Programmer"],
+    typeSpeed: 50,
+    backSpeed: 30,
+    backDelay: 1500,
+    loop: true
+  });
+</script>   
     <script>
   var typedAbout = new Typed(".typing-about", {
     strings: ["Frontend Developer", "Web Developer"],
