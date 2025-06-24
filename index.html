@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <div class="stars"></div>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-
-    <!-- LOTTIE PLAYER -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     <!-- FONT AWESOME -->
@@ -20,23 +19,7 @@
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <!-- STAR EFFECT -->
-    <div class="stars"></div>
-
-    <!-- FLYING DRAGON -->
-    <div class="flying-dragon">
-      <lottie-player
-        src="https://assets4.lottiefiles.com/private_files/lf30_w11rsjph.json"
-        background="transparent"
-        speed="1"
-        style="width: 300px; height: 300px"
-        loop
-        autoplay
-      ></lottie-player>
-    </div>
-
     <!-- HEADER -->
     <header class="header">
       <a href="#" class="logo">Portfolio</a>
@@ -51,11 +34,21 @@
     </header>
 
     <!-- HOME -->
+    <div class="flying-dragon">
+  <lottie-player
+    src="https://assets4.lottiefiles.com/private_files/lf30_w11rsjph.json"
+    background="transparent"
+    speed="1"
+    style="width: 300px; height: 300px"
+    loop
+    autoplay
+  ></lottie-player>
+</div>
     <section class="home" id="home">
-      <div class="home-content">
-        <h3>Hello World, My Name is</h3>
-        <h1>Juliansyah</h1>
-        <h3>And I'm a <span class="typing-text"></span></h3>
+  <div class="home-content">
+    <h3>Hello World, My Name is</h3>
+    <h1>Juliansyah</h1>
+    <h3>And I'm a <span class="typing-text"></span></h3>
         <p>
           Creative, self-starting and ambitious Front-End Developer with 1 year
           of experience, in website development, for Responsive e-Commerce and
@@ -63,9 +56,16 @@
           collaborative environment...
         </p>
         <div class="social-media">
-          <a href="https://www.instagram.com/rianz_yan/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.tiktok.com/@nokturnist_?_t=8mBoVt3gpxn&_r=1"><i class="fa-brands fa-tiktok"></i></a>
-          <a href="https://api.whatsapp.com/send/?phone=62895329278298&text&type=phone_number&app_absent=0&wame_ctl=1"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/rianz_yan/?next=%2F"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.tiktok.com/@nokturnist_?_t=8mBoVt3gpxn&_r=1"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=62895329278298&text&type=phone_number&app_absent=0&wame_ctl=1"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
         </div>
         <a
           href="https://drive.google.com/file/d/1mFTGPzpSj4L6a41cGNFAfsAT2aogxrCS/view?usp=drive_link"
@@ -82,7 +82,10 @@
     <!-- ABOUT -->
     <section class="about" id="about">
       <div class="about-img">
-        <img src="Image/IMG_4599.png" alt="About Me" />
+        <img
+          src="Image/IMG_4599.png"
+          alt="About Me"
+        />
       </div>
       <div class="about-content">
         <h2 class="heading">About <span>Me</span></h2>
@@ -101,19 +104,25 @@
         <div class="services-box">
           <i class="fa-solid fa-code"></i>
           <h3>Web Development</h3>
-          <p>Experienced in frontend development for 1 year via self-learning.</p>
+          <p>
+            Experienced in frontend development for 1 year via self-learning.
+          </p>
           <a href="#" class="btn">Read More</a>
         </div>
         <div class="services-box">
           <i class="fa-solid fa-palette"></i>
           <h3>UI/UX Designing</h3>
-          <p>Experienced in frontend development for 1 year via self-learning.</p>
+          <p>
+            Experienced in frontend development for 1 year via self-learning.
+          </p>
           <a href="#" class="btn">Read More</a>
         </div>
         <div class="services-box">
           <i class="fa-brands fa-android"></i>
           <h3>App Development</h3>
-          <p>Experienced in frontend development for 1 year via self-learning.</p>
+          <p>
+            Experienced in frontend development for 1 year via self-learning.
+          </p>
           <a href="#" class="btn">Read More</a>
         </div>
       </div>
@@ -123,6 +132,7 @@
     <section class="portfolio" id="portfolio">
       <h2 class="heading">Latest <span>Projects</span></h2>
       <div class="portfolio-container">
+        <!-- ulangi elemen ini untuk tiap proyek -->
         <div class="portfolio-box">
           <img src="Image/1.jpg" alt="Project Image" />
           <div class="portfolio-layer">
@@ -131,6 +141,7 @@
             <i class="fa-solid fa-up-right-from-square"></i>
           </div>
         </div>
+        <!-- duplikat jika perlu -->
       </div>
     </section>
 
@@ -154,16 +165,25 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-text">
-        <p>&copy; 2024 by @MuhammadNurrahmanJuliansyah | All Rights Reserved.</p>
+        <p>
+          &copy; 2024 by @MuhammadNurrahmanJuliansyah | All Rights Reserved.
+        </p>
       </div>
       <div class="footer-iconTop">
         <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
       </div>
     </footer>
 
-    <!-- SCRIPTS -->
-    <script src="https://cdn.jsdelivr.net/npm/scrollreveal"></script>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- LIBRARIES -->
+    <script>
+  const dragon = document.querySelector(".flying-dragon");
+
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+    // Gerakan naga secara horizontal
+    dragon.style.transform = translate(${scrollY * 0.5}px, 0);
+  });
+</script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="JS/main.js"></script>
@@ -175,29 +195,16 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-
-    <!-- TYPING EFFECT -->
-    <script>
-      var typed = new Typed(".typing-text", {
-        strings: ["Frontend Developer", "UI/UX Design", "Programmer"],
-        typeSpeed: 100,
-        backSpeed: 40,
-        startDelay: 1500,
-        backDelay: 500,
-        loop: true,
-      });
-    </script>
-
-    <!-- DRAGON FOLLOW SCROLL -->
-    <script>
-      window.addEventListener("DOMContentLoaded", function () {
-        const dragon = document.querySelector(".flying-dragon");
-        window.addEventListener("scroll", () => {
-          const scrollY = window.scrollY;
-          dragon.style.transform = `translateX(${scrollY * 0.5}px)`;
-        });
-      });
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed(".typing-text", {
+    strings: ["Frontend Developer", "UI/UX Design", "Proggrammer"],
+    typeSpeed: 100,
+    backSpeed: 40,
+    startDelay: 1500,
+    backDelay: 500,
+    loop: true
+  });
+</script>
   </body>
 </html>
-
