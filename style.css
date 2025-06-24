@@ -162,8 +162,6 @@ span {
 }
 
 .typing-text {
-  font-weight: inherit;
-  font-size: inherit;
   color: var(--main-color);
   border-right: 2px solid var(--main-color);
   white-space: nowrap;
