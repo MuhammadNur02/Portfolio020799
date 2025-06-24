@@ -162,14 +162,6 @@
     </footer>
 
     <!-- SCRIPTS -->
-    <script>
-      const dragon = document.querySelector(".flying-dragon");
-      window.addEventListener("scroll", () => {
-        const scrollY = window.scrollY;
-        dragon.style.transform = `translateX(${scrollY * 0.5}px)`;
-      });
-    </script>
-
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="JS/main.js"></script>
@@ -182,7 +174,7 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
 
-    <!-- TYPED JS INIT -->
+    <!-- TYPING EFFECT -->
     <script>
       var typed = new Typed(".typing-text", {
         strings: ["Frontend Developer", "UI/UX Design", "Programmer"],
@@ -193,5 +185,17 @@
         loop: true,
       });
     </script>
+
+    <!-- DRAGON FOLLOW SCROLL -->
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        const dragon = document.querySelector(".flying-dragon");
+        window.addEventListener("scroll", () => {
+          const scrollY = window.scrollY;
+          dragon.style.transform = `translateX(${scrollY * 0.5}px)`;
+        });
+      });
+    </script>
   </body>
 </html>
+
