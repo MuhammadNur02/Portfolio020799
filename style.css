@@ -12,10 +12,10 @@
 }
 
 :root {
-  --bg-color: #140c2c;
-  --snd-bg-color: #262b40;
-  --text-color: #fff;
-  --main-color: #59b2f4;
+  --bg-color: #0d0d1f;
+  --snd-bg-color: #1b1b2f;
+  --text-color: #e0e0e0;
+  --main-color: #6c63ff; /* ungu elegan */
 }
 
 html {
@@ -137,10 +137,9 @@ span {
   width: 100%;
   max-width: 300px;
   border-radius: 50%;
-  border: 5px solid #00e0ff;
-  box-shadow: 0 0 25px rgba(0, 255, 255, 0.7), 0 0 40px rgba(0, 255, 255, 0.5);
-  animation: floatimage 5s ease-in-out infinite,
-    neonGlow 1.5s infinite alternate;
+  border: 5px solid var(--main-color);
+  box-shadow: 0 0 15px rgba(108, 99, 255, 0.3);
+  animation: floatimage 5s ease-in-out infinite;
 }
 
 @keyframes floatimage {
@@ -165,23 +164,19 @@ span {
 .typing-text {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--main-color); /* bisa ganti warna sesuai tema */
+  color: var(--main-color);
   display: inline-block;
-  border-right: 2px solid var(--main-color); /* garis berkedip */
+  border-right: 2px solid var(--main-color);
   white-space: nowrap;
   overflow: hidden;
   animation: blink-caret 0.75s step-end infinite;
-  transition: all 0.4s ease-in-out; /* transisi halus */
 }
 
 @keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: var(--main-color);
-  }
+  from, to { border-color: transparent; }
+  50% { border-color: var(--main-color); }
 }
+
 .social-media a {
   display: inline-flex;
   justify-content: center;
@@ -211,12 +206,12 @@ span {
   padding: 1rem 2.8rem;
   background: var(--main-color);
   border-radius: 4rem;
-  box-shadow: 0 0 1rem var(--main-color);
+  box-shadow: 0 0 0.5rem var(--main-color);
   font-size: 1.6rem;
   color: var(--bg-color);
   letter-spacing: 0.1rem;
   font-weight: 600;
-  transition: 0.5s ease;
+  transition: 0.4s ease;
 }
 
 .btn::before {
