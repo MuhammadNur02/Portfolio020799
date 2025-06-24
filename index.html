@@ -34,9 +34,9 @@
     </header>
 
     <!-- HOME -->
-    <div class="cute-cat">
+    <div class="cute-dog">
   <lottie-player
-    src="https://assets7.lottiefiles.com/packages/lf20_qx2g6h1g.json"
+    src="https://assets7.lottiefiles.com/packages/lf20_jcikwtux.json"
     background="transparent"
     speed="1"
     style="width: 250px; height: 250px"
@@ -175,6 +175,16 @@
     </footer>
 
     <!-- LIBRARIES -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+  const dog = document.querySelector(".cute-dog");
+  dog.addEventListener("click", () => {
+    dog.classList.add("jump");
+    setTimeout(() => {
+      dog.classList.remove("jump");
+    }, 300);
+  });
+</script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="JS/main.js"></script>
@@ -197,6 +207,5 @@
     loop: true
   });
 </script>
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>
