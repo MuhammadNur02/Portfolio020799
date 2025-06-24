@@ -453,20 +453,24 @@ span {
   font-size: 2.4rem;
   color: var(--snd-bg-color);
 }
-.cute-dog {
-  transition: transform 0.3s ease;
-  cursor: pointer;
-}
-.cute-dog.jump {
-  transform: translateY(-30px);
+.flying-dragon {
+  position: fixed;
+  top: 20%;
+  left: 5%;
+  z-index: 999;
+  pointer-events: none;
+  animation: float 4s ease-in-out infinite;
 }
 
-@keyframes bounce {
-  0%, 100% {
+@keyframes float {
+  0% {
     transform: translateY(0px);
   }
   50% {
     transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 /*BREAKPOINT*/
