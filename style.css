@@ -453,7 +453,22 @@ span {
   font-size: 2.4rem;
   color: var(--snd-bg-color);
 }
+.cute-cat {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  animation: bounce 3s ease-in-out infinite;
+}
 
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
 /*BREAKPOINT*/
 
 @media (max-width: 1200px) {
